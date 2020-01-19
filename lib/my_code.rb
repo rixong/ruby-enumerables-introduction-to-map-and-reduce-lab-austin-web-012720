@@ -18,7 +18,7 @@ source_array.map { |ele| ele*ele }
 end
 
 def reduce_to_total(source_array, total = 0)
-  source_array (:+)
+  source_array.reduce (:+)
 end
 
 def reduce_to_all_true (source_array)
