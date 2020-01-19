@@ -26,6 +26,6 @@ source_array
 end
 
 def reduce_to_any_true (source_array, starting_point)
-  source_array.reduce (starting_point){ |sum, ele| sum + ele }
+  source_array.reduce (starting_point, :+)
 end
 
